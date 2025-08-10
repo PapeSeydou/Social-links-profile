@@ -52,7 +52,7 @@ body {
 
 
 img {
-    height: 64px;
+    height: 90px;
     border-radius: 100%;
 }
 
@@ -69,14 +69,16 @@ h1, #description {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 1rem;
+    gap: 1.3rem;
+    text-align: center;
 }
 
 .link-button{
+    text-decoration: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
     border: 0px;
-    padding: .75rem 2rem;
+    padding: 1rem 2rem;
     border-radius: .5rem;
 }
 
@@ -88,7 +90,7 @@ h1, #description {
     src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(truetype-variations);
 }
 
-h1, p, button {
+h1, p, a {
     text-align: center;
     font-family: 'Inter', sans-serif;
     line-height: 150%;
@@ -100,7 +102,7 @@ h1, p {
 }
 
 h1{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -114,4 +116,12 @@ h1{
 
 .link-button {
     font-weight: 700; 
+}
+
+
+
+/* ////// States ////// */
+.link-button:hover{
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(75, 94%, 57%);
 }
